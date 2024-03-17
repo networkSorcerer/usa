@@ -20,7 +20,22 @@ public class AdoptionVO extends CommonVO{
 	private String adoptionLevel="";
 	private String adoptionPasswd="";
 	private String adminId;
+	
+	private int animalId =0;
+	private String animalSpecies="";
+	private String animalAge="";
+	private String animalGender="";
+	private String animalStatus="";
+	private String animalKg="";
+	private String animalColor="";
+	private String animalMemo="";
+	private String animalTemp;
+	private String animalRegist;
+	private String animalName="";
+	private String animalPasswd="";
+	private int readcnt=0;
 
+	private String animalFile = "";
 	
 	private MultipartFile file;
 	private String adoptionFile = "";

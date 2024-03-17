@@ -14,51 +14,63 @@
         </style>
 <body>
 		<div class="text-center"><h4 class="mb-2">찾아오시는 길</h4></div>	
-		<div id="mapList">
-			<table  class="table table-striped" id="item-template">
-				<tbody id="list">					
-					<tr class = "text-center centerName">								
-						<td class="name"></td>										
-					<tr>						
-					<tr class = "text-center centerAddress" >									
-				
-						<td class="address"></td>												
-					<tr>
-					<tr class = "text-center centerOperating" >									
-				
-						<td classs="operationg"></td>											
-					<tr>
-					<tr class = "text-center centerTell">									
-						
-						<td class="tell"></td>													
-					<tr>					
-					<tr>							
-						<td  class="link-primary ">
-							<button  class="btn btn-primary" onclick="resetCenter()">서초 동물 사랑</button>
-						</td>
-						<td  class="link-primary ">
-							<button  class="btn btn-primary" onclick="setCenter()">아이조아</button> 
-						</td>
-						<td  class="link-primary ">
-							<button  class="btn btn-primary" onclick="panTo()">도그마루</button> 
-						</td>				
-					</tr>													
-				</tbody>
+		<div style="width: 50%; margin: 0 auto;">
+			<table  class="table table-striped center">					
+				<tr class = "text-center centerName">								
+					<td class="name">센터</td>
+					<td>도그마루 보호소</td>
+					<td>아이조아</td>
+					<td>서초 동물 사랑센터</td>										
+				<tr>						
+				<tr class = "text-center centerAddress" >									
+			
+					<td class="address">주소</td>	
+					<td> 서울특별시 송파구 석촌호수로 104</td>	
+					<td>서울 용산구 녹사평대로32길 28 2층</td>	
+					<td>서울특별시 서초구 양재천로19길 22</td>									
+				<tr>
+				<tr class = "text-center centerOperating" >									
+			
+					<td classs="operationg">영업 시간</td>
+					<td>연중무휴 10:00 ~ 20:00</td>
+					<td>연중무휴 12:00~20:30</td>
+					<td>월요일 휴무 10:00~17:00</td>											
+				<tr>
+				<tr class = "text-center centerTell">									
+					
+					<td class="tell">연락처</td>
+					<td>070-4349-3357</td>
+					<td>0507-1316-1160</td>
+					<td>02-6956-7980</td>													
+				<tr>					
+				<tr>
+					<td></td>
+					<td  class="text-center">
+						<button  class="btn btn-primary " onclick="panTo()">도그마루</button> 
+					</td>
+					<td  class="text-center">
+						<button  class="btn btn-primary" onclick="setCenter()">아이조아</button> 
+					</td>
+					<td  class="text-center">
+						<button  class="btn btn-primary" onclick="resetCenter()">서초 동물 사랑</button>
+					</td>
+				</tr>											
 			</table>
 		</div>
-		<button  class="btn btn-primary" onclick="resetCenter()">서초 동물 사랑</button>
-		<button  class="btn btn-primary" onclick="setCenter()">아이조아</button> 
-		<button  class="btn btn-primary" onclick="panTo()">도그마루</button> 
+		
+		
+		
+		
+		
 		
 		<div class="container my-5">
 			<div class = "p-5 text-center bg-body-tertiary rounded-3">
-				<div id="map" style="width: 1000px; height: 400px;"></div>
+				<div id="map" style="width: 1000px; height: 400px; margin: 0 auto"></div>
 			</div>
 		</div>
 	<script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e606ce0c708054c07480dbc81c66db4b"></script>
 	
 
-	
 	<script type="text/javascript">
 		var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
 	    mapOption = { 
