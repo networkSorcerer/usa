@@ -44,11 +44,34 @@
 	
 	
 	<select id="apList" parameterType="adoptionPossible" resultMap="adoptionPossibleMap">
-		SELECT animal_id, animal_species, animal_name, animal_gender, animal_status,
-       animal_kg, animal_color, animal_temp, readcnt,
-       TO_CHAR(animal_regist, 'YYYY-MM-DD') AS animal_regist, animal_file
-		FROM animal
-		WHERE animal_temp LIKE '1%'
+		SELECT 
+    a.animal_id,
+    a.animal_species,
+    a.animal_name,
+    a.animal_gender,
+    a.animal_status,
+    a.animal_kg,
+    a.animal_color,
+    a.animal_temp,
+    NVL(r.readcnt, 0) AS readcnt,
+    TO_CHAR(a.animal_regist, 'YYYY-MM-DD') AS animal_regist,
+    a.animal_file
+FROM 
+    animal a
+LEFT JOIN 
+    (
+        SELECT 
+            animal_id,
+            COUNT(*) AS readcnt
+        FROM 
+            adoption
+        WHERE 
+            adoption_id IS NOT NULL
+        GROUP BY 
+            animal_id
+    ) r ON a.animal_id = r.animal_id
+WHERE 
+    a.animal_id IN (SELECT animal_id FROM adoption WHERE adoption_id IS NOT NULL)
 	</select>
 	
 	
