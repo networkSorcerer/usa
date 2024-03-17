@@ -69,8 +69,8 @@
 		<selectKey keyProperty="adoptionId" resultType="int" order="BEFORE">
 			select adoption_seq.nextval from dual
 		</selectKey>
-		INSERT INTO adoption (adoption_id, adoption_title, adoption_level,adoption_status,adoption_content, adoption_passwd,adoption_file)
-		VALUES( #{adoptionId}, #{adoptionTitle}, #{adoptionLevel},#{adoptionStatus},#{adoptionContent},#{adoptionPasswd},#{adoptionFile})
+		INSERT INTO adoption (adoption_id, adoption_title, adoption_level,adoption_status,adoption_content, adoption_passwd,adoption_file,animal_id,admin_id)
+		VALUES( #{adoptionId}, #{adoptionTitle}, #{adoptionLevel},#{adoptionStatus},#{adoptionContent},#{adoptionPasswd},#{adoptionFile},#{animalId},#{adminId})
 	</insert> 
 	
 	

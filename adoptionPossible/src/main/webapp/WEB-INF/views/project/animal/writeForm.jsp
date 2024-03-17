@@ -7,6 +7,15 @@
             <h3>게시판 입력화면</h3>
         </div>
         <form id="f_writeForm">
+        	 <div class="mb-3 row">
+                <label for="adminId" class="col-sm-2 col-form-label">등록인 ID 확인</label>
+                <div class="col-sm-10">
+                    <select class="form-control" id="adminId" name="adminId"
+                        data-type="CDATA">
+                        <option>admin</option>
+                    </select>
+                </div>
+            </div>
             <div class="mb-3 row">
                 <label for="animalName" class="col-sm-2 col-form-label">동물 이름</label>
                 <div class="col-sm-10">

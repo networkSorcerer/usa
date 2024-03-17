@@ -56,12 +56,7 @@
 					</td>
 				</tr>											
 			</table>
-		</div>
-		
-		
-		
-		
-		
+		</div>	
 		
 		<div class="container my-5">
 			<div class = "p-5 text-center bg-body-tertiary rounded-3">

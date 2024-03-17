@@ -15,6 +15,23 @@
                         data-type="CDATA">
                 </div>
             </div>
+            <div class="mb-3 row">
+                <label for="animalId" class="col-sm-2 col-form-label">동물 ID</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="animalId"
+                        name="animalId" placeholder="공고로 등록하실 동물 ID를 입력하세요."
+                        data-type="CDATA">
+                </div>
+            </div>
+              <div class="mb-3 row">
+                <label for="adminId" class="col-sm-2 col-form-label">등록인 ID 확인</label>
+                <div class="col-sm-10">
+                    <select class="form-control" id="adminId"
+                        name="adminId"  data-type="CDATA">
+                    	<option>admin</option>    
+                    </select>
+                </div>
+            </div>
              <div class="mb-3 row">
                 <label for="adoptionContent" class="col-sm-2 col-form-label">공고 내용</label>
                 <div class="col-sm-10">

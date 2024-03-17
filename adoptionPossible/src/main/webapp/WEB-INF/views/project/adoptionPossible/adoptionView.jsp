@@ -12,17 +12,37 @@
                 <c:choose>
                     <c:when test="${not empty apList}">
                         <c:forEach var="animal" items="${apList}" varStatus="status">
-                            <div class="col-md-4 mb-4">
+                            <div class="col-md-4 mb-4 ">
                                 <div class="card">
                                     <img src="<c:if test='${not empty animal.animalFile}'>/uploadStorage/animal/${animal.animalFile}</c:if>
-                                        <c:if test='${empty animal.animalFile}'>/resources/images/common/noimage.jpg</c:if>"
-                                        class="card-img-top" alt="Animal Image">
+                                         <c:if test='${empty animal.animalFile}'>/resources/images/common/noanimal11.png</c:if>"
+                                       class="card-img-top l"  alt="Animal Image">
                                     <div class="card-body">
-                                        <h5 class="card-title goDetail text-start">${animal.animalName}</h5>
-                                        <p class="card-text species">${animal.animalSpecies}</p>
-                                        <p class="card-text kg">${animal.animalKg}</p>
-                                        <p class="card-text gender">${animal.animalGender}</p>
-                                        <p class="card-text temp0">${animal.animalTemp}</p>
+                                        <table>
+                                        	<tr class = "text-center id" data-num="${animal.animalId}">
+				
+												<td class="id">${animal.animalId}</td>
+                                        	<tr >
+                                        		<td class="goDetail">
+                                        		 <td class="goDetail">
+    												<a href="/ap/apDetail?animalId=${animal.animalId}">${animal.animalName}</a>
+												</td>
+
+                                        	</tr>
+                                        	<tr >
+                                        		<td> <p class="card-text species">${animal.animalSpecies}</p></td>
+                                        	</tr>
+                                        	<tr>
+                                        		<td> <p class="card-text kg">${animal.animalKg}</p></td>
+                                        	</tr>
+                                        	<tr>
+                                        		<td><p class="card-text gender">${animal.animalGender}</p></td>
+                                        	</tr>
+                                        	<tr>
+                                        		<td> <p class="card-text temp0">${animal.animalTemp}</p></td>
+                                        	</tr>
+                                                    
+                                        </table>
                                     </div>
                                 </div>
                             </div>
@@ -37,5 +57,6 @@
             </div>
         </div>
     </div>
-    <script src="/resources/include/js/apList.js"></script>
+   <script src="/resources/include/js/ap/apList.js"></script>
 </body>
+
