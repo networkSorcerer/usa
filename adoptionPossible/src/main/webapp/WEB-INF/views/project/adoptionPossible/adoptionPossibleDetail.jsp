@@ -24,12 +24,7 @@
 			</div> -->
 			
 
-			<div class="col-md-10 text-end">
-				<button type="button" id="updateFormBtn" class="btn btn-success btn-sm">글수정</button>
-				<button type="button" id="DeleteBtn" class="btn btn-success btn-sm">글삭제</button>
-				<button type="button" id="insertFormBtn" class="btn btn-success btn-sm">글쓰기</button>
-				<button type="button" id="adoptionListBtn" class="btn btn-success btn-sm">목록</button>
-			</div>
+			
 		</div>
 		
 		<form name="f_data" id="f_data">
