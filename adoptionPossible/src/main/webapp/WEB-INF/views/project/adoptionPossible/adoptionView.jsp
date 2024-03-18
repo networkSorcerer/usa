@@ -21,13 +21,11 @@
                                         <table>
                                         	<tr class = "text-center id" data-num="${animal.animalId}">
 				
-												<td class="id">${animal.animalId}</td>
+											
                                         	<tr >
-                                        		<td class="goDetail">
                                         		 <td class="goDetail">
     												<a href="/ap/apDetail?animalId=${animal.animalId}">${animal.animalName}</a>
 												</td>
-
                                         	</tr>
                                         	<tr >
                                         		<td> <p class="card-text species">${animal.animalSpecies}</p></td>
@@ -38,10 +36,7 @@
                                         	<tr>
                                         		<td><p class="card-text gender">${animal.animalGender}</p></td>
                                         	</tr>
-                                        	<tr>
-                                        		<td> <p class="card-text temp0">${animal.animalTemp}</p></td>
-                                        	</tr>
-                                                    
+                                        	
                                         </table>
                                     </div>
                                 </div>
