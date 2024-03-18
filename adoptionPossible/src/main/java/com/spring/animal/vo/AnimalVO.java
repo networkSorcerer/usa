@@ -24,6 +24,8 @@ public class AnimalVO extends CommonVO {
 	private String animalPasswd="";
 	private int readcnt=0;
 	
+	private String adminId="";
+	
 	private MultipartFile file;
 	private String animalFile = "";
 }

@@ -49,7 +49,7 @@
 			select animal_seq.nextval from dual
 		</selectKey>
 		INSERT INTO animal(animal_id, animal_name, animal_species,animal_gender, animal_kg, animal_age,  animal_status,animal_memo,animal_color,animal_temp,animal_passwd,animal_file,admin_id)
-		VALUES(#{animalId}, #{animalName}, #{animalSpecies},#{animalGender},#{animalKg},#{animalAge} , #{animalStatus},#{animalMemo},#{animalColor},#{animalTemp},#{animalPasswd},#{animalFile},#{admin_id})
+		VALUES(#{animalId}, #{animalName}, #{animalSpecies},#{animalGender},#{animalKg},#{animalAge} , #{animalStatus},#{animalMemo},#{animalColor},#{animalTemp},#{animalPasswd},#{animalFile},#{adminId})
 	</insert>
 	
 	
