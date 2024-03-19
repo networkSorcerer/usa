@@ -42,11 +42,14 @@
 }
 	
 </style>
-<body>
+<div class="container-main">
     <div class="container">
         <div class="text-center">
             <h3>입양 가능 동물 리스트</h3>
         </div>
+        <br>
+        <br>
+        <br>
         <div id="animalSearch" class="text-right"></div>
 
         <div id="apList">
@@ -57,7 +60,7 @@
                             <div class="col-md-4 mb-4 ">
                                 <div class="card">
                                     <img src="<c:if test='${not empty animal.animalFile}'>/uploadStorage/animal/${animal.animalFile}</c:if>
-                                         <c:if test='${empty animal.animalFile}'>/resources/images/common/noanimal11.png</c:if>"
+                                         <c:if test='${empty animal.animalFile}'>/resources/images/common/animal.jpg</c:if>"
                                        class="card-img-top l"  alt="Animal Image">
                                     <div class="card-body">
                                         <table>
@@ -94,6 +97,7 @@
             </div>
         </div>
         <jsp:include page="weather.jsp" />
+    </div>
     </div>
    <script src="/resources/include/js/ap/apList.js"></script>
 </body>

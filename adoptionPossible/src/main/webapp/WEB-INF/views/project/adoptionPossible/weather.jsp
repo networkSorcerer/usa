@@ -10,6 +10,7 @@
 	#banner-container {
     position: fixed;
     top: 0;
+    bottom: 100px;
     left: -300px; /* 배너가 열렸을 때의 위치 */
     width: 300px;
     height: 100%;
@@ -23,9 +24,9 @@
 }
 #toggle-btn {
     position: fixed;
-    top: 100px;
+    top: 160px;
     left: 0;
-    width: 50px; /* 버튼의 너비 조절 */
+    width: 60px; /* 버튼의 너비 조절 */
     height: 90px; /* 버튼의 높이 조절 */
     background-color: #007bff;
     color: #fff;
@@ -68,7 +69,7 @@
        
     </div>
 </div>
-	 <button id="toggle-btn">같이 산책 가요</button>
+	 <button id="toggle-btn">같이<br>산책<br>가요</button>
 	<script src="/resources/include/js/weather/weather.js"></script>
 </body>
 </html>
