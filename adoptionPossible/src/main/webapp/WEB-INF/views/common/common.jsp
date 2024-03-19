@@ -41,7 +41,7 @@
 		        line-height: 100px; /* 중앙 정렬을 위해 추가 */
 		    }
 		   .hidden-banner {
-		        display: none;
+		       
 		        position: fixed;
 		        top: 0;
 		        right: -300px; /* 배너가 열렸을 때의 위치 */
@@ -56,12 +56,6 @@
 		        padding: 20px;
 		    }
 		
-		    #showBannerButton {
-		        position: fixed;
-		        top: 160px;
-		        right: 0;
-		        z-index: 10000;
-		    }
 			    
 		</style>
 		<script>
