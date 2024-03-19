@@ -65,7 +65,7 @@
 											class="rounded w-50 h-50"/>
 										</c:if>
 										<c:if test="${empty animal.animalFile }">
-											<img src="/resources/images/common/noimage.jpg"
+											<img src="/resources/images/common/noanimal.jpg"
 											class="rounded w-100 h-100"/>
 										</c:if>
 									</td>

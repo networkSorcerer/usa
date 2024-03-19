@@ -45,12 +45,13 @@
 	</select>
 	
 	<insert id="animalInsert" parameterType="animal">
-		<selectKey keyProperty="animalId" resultType="int" order="BEFORE">
-			select animal_seq.nextval from dual
-		</selectKey>
-		INSERT INTO animal(animal_id, animal_name, animal_species,animal_gender, animal_kg, animal_age,  animal_status,animal_memo,animal_color,animal_temp,animal_passwd,animal_file,admin_id)
-		VALUES(#{animalId}, #{animalName}, #{animalSpecies},#{animalGender},#{animalKg},#{animalAge} , #{animalStatus},#{animalMemo},#{animalColor},#{animalTemp},#{animalPasswd},#{animalFile},#{adminId})
+    <selectKey keyProperty="animalId" resultType="int" order="BEFORE">
+        select animal_seq.nextval from dual
+    </selectKey>
+	    INSERT INTO animal(animal_id, animal_name, animal_species, animal_gender, animal_kg, animal_age, animal_status, animal_memo, animal_color, animal_temp, animal_passwd, animal_file, admin_id)
+	    VALUES(#{animalId}, #{animalName}, #{animalSpecies}, #{animalGender}, #{animalKg}, #{animalAge}, #{animalStatus}, #{animalMemo}, #{animalColor}, #{animalTemp}, #{animalPasswd}, #{animalFile}, #{adminId})
 	</insert>
+
 	
 	
 	
@@ -81,15 +82,16 @@
 	        animal_status = #{animalStatus},
 	        animal_memo = #{animalMemo},
 	        animal_temp = #{animalTemp},
-	        animal_regist = sysdate,
+	        animal_regist = sysdate
 	        <if test="animalPasswd != ''">
 	            , animal_passwd = #{animalPasswd}
 	        </if>
 	        <if test="animalFile != ''">
-	        	, animal_file = #{animalFile}
+	            , animal_file = #{animalFile}
 	        </if>
-	    WHERE animal_id =#{animalId}
+	   	 WHERE animal_id = #{animalId}
 	</update>
+
 
 
 	
