@@ -36,8 +36,8 @@
     padding: 10px; /* 텍스트 내용과 버튼의 여백 조절 */
     box-sizing: border-box; /* padding이 width와 height에 포함되도록 설정 */
     line-height: 1.5; /* 텍스트 줄 간격 설정 */
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 
 #toggle-btn:hover {

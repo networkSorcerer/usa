@@ -55,8 +55,24 @@
 		    #banner-con {
 		        padding: 20px;
 		    }
-		
-			    
+			#showBannerButton {
+			    position: fixed;
+			    top: 10px;
+			    right: 300px; /* 배너의 너비와 동일한 값으로 설정 */
+			    width: 100px;
+			    height: 90px;
+			    background-color: #007bff;
+			    color: #fff;
+			    border: none;
+			    cursor: pointer;
+			    z-index: 10001; /* 배너보다 위에 표시되도록 설정 */
+			    padding: 10px;
+			    box-sizing: border-box;
+			    line-height: 1.5;
+			    border-top-right-radius: 25px;
+			    border-bottom-right-radius: 25px;
+			}
+
 		</style>
 		<script>
 		    document.addEventListener("DOMContentLoaded", function() {
