@@ -81,7 +81,7 @@
 	        animal_status = #{animalStatus},
 	        animal_memo = #{animalMemo},
 	        animal_temp = #{animalTemp},
-	        animal_regist = sysdate
+	        animal_regist = sysdate,
 	        <if test="animalPasswd != ''">
 	            , animal_passwd = #{animalPasswd}
 	        </if>

@@ -127,6 +127,7 @@
 			</table>
 		</div>
 		<jsp:include page="../map/mapList.jsp" />	
+		<jsp:include page="weather.jsp" />
 	</div>	
 	<script src="/resources/include/js/adoption/adoptionDetail.js"></script>		
 </body>

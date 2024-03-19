@@ -10,7 +10,7 @@
 		<result column="adoption_status" property="adoptionStatus"/>
 		<result column="adoption_level" property="adoptionLevel"/>
 		<result column="adoption_file" property="adoptionFile"/>
-		<result column="adoption_passwd" property="aoptionPasswd"/>
+		<result column="adoption_passwd" property="adoptionPasswd"/>
 		<result column="admin_id" property="adminId"/>
 		
 		<result column="animal_id" property="animalId"/>

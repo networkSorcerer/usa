@@ -32,6 +32,8 @@ public class AnimalController {
 		
 		List<AnimalVO> animalList = animalService.animalList(avo);
 		model.addAttribute("animalList", animalList);
+		
+		
 		return "project/animal/animalList";
 	}
 	
