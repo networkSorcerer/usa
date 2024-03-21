@@ -10,6 +10,7 @@
 		</div>
 		
 		
+		<jsp:include page="adoptionPossible/weather.jsp" />
 		
 		<script src="/resources/include/js/jquery-3.7.1.min.js"></script>
 		<script src="/resources/include/js/common.js"></script>

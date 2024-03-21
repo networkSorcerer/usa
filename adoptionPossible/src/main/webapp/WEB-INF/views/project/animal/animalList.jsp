@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/views/common/common.jsp" %>
 
-
+<body>
 	<div class ="container">
 		<div class="text-center"><h3>동물 리스트</h3></div>
 		

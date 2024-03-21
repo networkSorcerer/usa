@@ -72,22 +72,11 @@
 			    border-top-left-radius: 25px;
 			    border-bottom-left-radius: 25px;
 			}
-			.container {
-				text-align: center;
-				margin-top: 110px;
-				padding: 20px;
-			
-			}
-			 
-		    body {
-		        margin: 0;
-		        padding: 0;
-		        font-family: Arial, sans-serif;
-		        display: flex;
-		        justify-content: center;
-		        align-items: center;
-		        height: 100vh;
-		    }
+			  .container {
+		           margin-top: 50px;
+		        }
+					 
+		   
 		  
 		</style>
 		
@@ -193,13 +182,3 @@
 			    <!-- 배너 내용을 여기에 추가합니다 -->
 			</div>
 					
-		<br>
-		<br>	
-		<br>
-		<br>
-		<br>
-		<br>	
-		<br>
-		<br>
-
-</html>

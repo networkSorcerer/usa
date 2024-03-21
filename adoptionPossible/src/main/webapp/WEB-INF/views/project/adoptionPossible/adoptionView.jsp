@@ -42,6 +42,7 @@
 }
 	
 </style>
+<body>
 <div class="container-main">
     <div class="container">
         <div class="text-center">

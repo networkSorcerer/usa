@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/views/common/common.jsp" %>
 
-<body>
+<body>	
 	<div class ="container">
 		<div class="text-center"><h3>입양 공고 리스트</h3></div>
 		
