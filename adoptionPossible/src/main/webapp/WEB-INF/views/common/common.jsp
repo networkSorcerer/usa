@@ -57,10 +57,10 @@
 		    }
 			#showBannerButton {
 			    position: fixed;
-			    top: 10px;
-			    right: 300px; /* 배너의 너비와 동일한 값으로 설정 */
-			    width: 100px;
-			    height: 90px;
+			    top: 160px;
+			    right: 0px; /* 배너의 너비와 동일한 값으로 설정 */
+			    width: 80px;
+			    height: 100px;
 			    background-color: #007bff;
 			    color: #fff;
 			    border: none;
@@ -69,21 +69,41 @@
 			    padding: 10px;
 			    box-sizing: border-box;
 			    line-height: 1.5;
-			    border-top-right-radius: 25px;
-			    border-bottom-right-radius: 25px;
+			    border-top-left-radius: 25px;
+			    border-bottom-left-radius: 25px;
 			}
-
+			.container {
+				text-align: center;
+				margin-top: 110px;
+				padding: 20px;
+			
+			}
+			 
+		    body {
+		        margin: 0;
+		        padding: 0;
+		        font-family: Arial, sans-serif;
+		        display: flex;
+		        justify-content: center;
+		        align-items: center;
+		        height: 100vh;
+		    }
+		  
 		</style>
+		
 		<script>
 		    document.addEventListener("DOMContentLoaded", function() {
 		        var showBannerButton = document.getElementById("showBannerButton");
 		        var banner = document.getElementById("banner");
-		
+		        const bannerCon = document.getElementById('banner-con');
+		        
 		        showBannerButton.addEventListener("click", function() {
 		            if (banner.style.right === "0px") {
 		                banner.style.right = "-300px";
+		                showBannerButton.style.right = '0'; // 버튼 위치 초기화
 		            } else {
 		                banner.style.right = "0px";
+		                showBannerButton.style.right = bannerCon.offsetWidth + 'px'; // 버튼을 배너 내용의 너비만큼 이동
 		            }
 		        });
 		    });
@@ -91,7 +111,8 @@
 
 	</head>
 	  <%-- 상단 navbar-fixed --%>
-	<body>
+	<body >
+	<%--class="d-flex h-100 text-center text-bg-dark " --%>
 		<nav class="navbar navbar-expand-md fixed-top bg-primary navbar-custom" style="background-color: skyblue; height: 100px;">
 
 			
@@ -102,24 +123,24 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarCollapse">
-					<ul class="navbar-nav me-auto mb-2 mb-md-0">
+					<!-- <ul class="navbar-nav me-auto mb-2 mb-md-0">
 						<li class="nav-item">
 							<a class="nav-link active" aria-current="page" href="#">Home</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="/board/boardList">게시판</a>
 						</li>
-						<!--<li class="nav-item">
+						<li class="nav-item">
 							 <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-						</li>-->
+						</li>
 						
-					</ul>
+					</ul> -->
 					<!-- <form class="d-flex" role="search">
 						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
 						<button class="btn btn-outline-success" type="submit">Search</button>
 					</form> -->
 				</div>
-				 <button id="showBannerButton" class="btn btn-primary ml-auto">배너 보이기</button>
+				 <button id="showBannerButton" class="btn btn-primary ml-auto">Menu</button>
 				
 			</div>
 			
@@ -128,10 +149,40 @@
 				<div id="banner-con">
 					<ul class="navbar-nav me-auto mb-2 mb-md-0">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
+							<a class="nav-link active" aria-current="page" href="/">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="/board/boardList">게시판</a>
+							<a class="nav-link" href="/ap/apList"></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/ap/apList"></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/ap/apList"></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/ap/apList"></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/ap/apList">게시판</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/ap/apList"></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/animal/animalList">동물 리스트</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/ap/apList"></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/ap/apList">입양 공고</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/ap/apList"></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/adoption/adoptionList">입양 후기</a>
 						</li>
 						<!--<li class="nav-item">
 							 <a class="nav-link disabled" aria-disabled="true">Disabled</a>
@@ -142,6 +193,10 @@
 			    <!-- 배너 내용을 여기에 추가합니다 -->
 			</div>
 					
+		<br>
+		<br>	
+		<br>
+		<br>
 		<br>
 		<br>	
 		<br>

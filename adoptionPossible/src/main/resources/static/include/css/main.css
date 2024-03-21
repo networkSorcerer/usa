@@ -1,0 +1,58 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "맑은 고딕";
+    font-size: 14px;
+    color: #333;
+}
+/* 추가 요소들을 좌우로 배치할때 Float을 적용하면 부모요소의 높이가 제대로 반영 되지 않으므로 요소들의 뒷공간에서 요소들이 달려드는 속성을
+Clear할 공통의 CSS를 작성합니다  clearfix라고 알려진 기술이다*/
+.cf:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 100px;
+    background: #aaa;
+}
+
+.slides {
+    height: 300px;
+    background: #ccc;
+}
+
+main {
+    height: 200px;
+    background: #ccc;
+}
+footer{
+    height: 100px;
+    background: #ddd;
+}
+
+main section {
+    width: 400px;
+    float: left;
+    height: 100%;
+}
+
+main .notice{
+    background: #777;
+}
+
+main .banner {
+    background: #666;
+}
+
+main .quick_links {
+    background: #555;
+}

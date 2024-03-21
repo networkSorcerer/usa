@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/views/common/common.jsp" %>
 
-<body>
+
 	<div class ="container">
 		<div class="text-center"><h3>동물 리스트</h3></div>
 		
@@ -17,7 +17,7 @@
 		        </div>
 		        <div class="col-auto">
 		            <select id="search" name="search" class="form-select form-select-sm" >
-		                <option value="all">전체 목록 조회</option>
+		               <option value="all">전체 목록 조회</option>
 		                <option value="animal_id">동물 ID</option>
 		                <option value="animal_name">이름</option>
 		                <option value="animal_species">분류</option>

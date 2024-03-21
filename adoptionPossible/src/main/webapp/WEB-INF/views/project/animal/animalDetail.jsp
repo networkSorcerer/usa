@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/views/common/common.jsp" %>
-<body>
+
 	<div class="container">
 		<div class="text-center"><h3>동물 리스트 상세 목록</h3></div>
 		
